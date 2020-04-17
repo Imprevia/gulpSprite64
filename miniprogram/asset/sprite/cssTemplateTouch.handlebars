@@ -1,0 +1,16 @@
+
+
+{{#sprites}}
+.xxz-icon-{{name}}{
+    background-position: {{offset_x}}rpx {{offset_y}}rpx;
+    background-repeat:no-repeat;
+    background-size:{{total_width}}rpx auto;
+    width:{{width}}rpx;
+    height:{{height}}rpx;
+}
+
+{{/sprites}}
+[class*="xxz-icon-"]{
+    display:inline-block;
+    background-image: url('{{spritesheet.image }}?v=1');
+}
